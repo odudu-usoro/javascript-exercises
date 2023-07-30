@@ -4,6 +4,7 @@ const repeatString = function(string, num){
     let i = 0;
     while (1 <= 3){
         stringResult += string;
+        i++;
     }
 
     return stringResult;
