@@ -1,7 +1,16 @@
-const removeFromArray = function(removeArr) {
-    removeFromArray = ([1, 2, 3, 4], 3);
-    removeArr.from(removeFromArray.keys(3));
+const removeFromArray = function (...args) {
+    const array = args[0];
+    const newArray =[];
+
+    array.forEach((item) => {
+        if (!args.includes(item)) {
+            newArray.push(item);
+            console.log(newArray);
+        }
+    });
+
+    return newArray;
 };
 
-// Do not edit below this line
+//Do not edit below this line
 module.exports = removeFromArray;
